@@ -3,11 +3,7 @@ import torch
 import torch.utils.checkpoint
 from torch import nn
 from transformers.activations import ACT2FN
-from transformers.modeling_utils import (
-    apply_chunking_to_forward,
-    find_pruneable_heads_and_indices,
-    prune_linear_layer,
-)
+from transformers.pytorch_utils import apply_chunking_to_forward, find_pruneable_heads_and_indices, prune_linear_layer
 
 
 class BertEmbeddings(nn.Module):

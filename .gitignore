@@ -6,3 +6,10 @@ data/*
 *.DS_Store
 results/*
 metrics/*
+data/
+model_weights/
+physionet.org/
+*.zip
+*.tar.gz
+*.log
+nohup.out
