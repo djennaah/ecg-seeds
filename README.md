@@ -28,7 +28,8 @@ really match pretrained ones?
 4. Other seeds: `run_clocs_merl_seeds.sh` (edit the seed list).
 
 ## Results
-`results_seedN/` and `metrics_seedN/` contain the outputs of each seed.
+Layout: `results/<model>/seed<N>/results` (raw `.pkl`, predictions) and `results/<model>/seed<N>/metrics` (tables).
+`run_clocs_merl_seeds.sh` writes `results_seedN` / `metrics_seedN` at the repo root; we moved them into `results/clocs_merl/seed<N>/` afterwards.
 Final tables, tests and figures: to be added.
 
 ## Authors
