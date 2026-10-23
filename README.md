@@ -28,8 +28,8 @@ really match pretrained ones?
 4. Other seeds: `run_clocs_merl_seeds.sh` (edit the seed list).
 
 ## Results
-Layout: `results/<model>/seed<N>/results` (raw `.pkl`, predictions) and `results/<model>/seed<N>/metrics` (tables).
-`run_clocs_merl_seeds.sh` writes `results_seedN` / `metrics_seedN` at the repo root; we moved them into `results/clocs_merl/seed<N>/` afterwards.
+Layout: `results/<model>/seed<N>/<label fraction>/` with `<model>.pkl` (test predictions), `<model>_metric.pkl` (metrics) and `<model>_dataset.pkl` (counts). Models: `clocs`, `merl`, `random_init` (official Random baseline). Label fractions: `0.01`, `0.1`, `1.0`.
+`run_clocs_merl_seeds.sh` writes `results_seedN` / `metrics_seedN` at the repo root; we kept only the `.pkl` files, reorganised as above (done markers and pipeline tables can be regenerated).
 Final tables, tests and figures: to be added.
 
 ## Authors
