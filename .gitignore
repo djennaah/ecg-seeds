@@ -1,15 +1,11 @@
-physionet.org/*
-weights/*
-model_weights/*
-data/*
-*.pyc
-*.DS_Store
-results/*
-metrics/*
+# Big or private files: never commit
 data/
 model_weights/
+weights/
 physionet.org/
 *.zip
 *.tar.gz
 *.log
 nohup.out
+*.pyc
+*.DS_Store
