@@ -9,7 +9,8 @@
 # The seed also changes the label subsample and the linear probe.
 #
 # Needs: PTB-XL 1.0.3 (500 Hz) already downloaded (see README). On CPU one seed takes about 1 h.
-# Output (same layout as results/clocs_merl): results/random/seed<N>/{results,metrics,config.json}
+# Output of this script: results/random/seed<N>/{results,metrics,config.json}
+# Note: the repo was reorganised afterwards; the same runs now live in results/random_init/seed<N>/<fraction>/
 # Optional: BACKUP_DIR=/path bash run_random_seeds.sh 45 46   also copies each seed to /path.
 # Note: seeds 42-44 were run with an earlier version of this loop, seed 45 with a first version
 # that did not stop on errors, seed 46 with this version. The procedure is the same.
