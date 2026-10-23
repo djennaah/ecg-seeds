@@ -1,0 +1,8 @@
+Dataset,Original,All Grid,ResNet Grid,ViT Grid
+PTB-XL Super,0.86,0.86 ± 0.00,0.86 ± 0.00,---
+PTB-XL Sub,---,---,---,---
+PTB-XL Form,---,---,---,---
+PTB-XL Rhythm,---,---,---,---
+CPSC2018,---,---,---,---
+CSN,---,---,---,---
+EchoNext,---,---,---,---
