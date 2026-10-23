@@ -1,0 +1,9 @@
+metric,fraction,ordering,n_seeds,of
+auroc,1%,MERL > CLOCS > Random init,3,5
+auroc,1%,MERL > Random init > CLOCS,2,5
+auroc,10%,MERL > Random init > CLOCS,5,5
+auroc,100%,MERL > Random init > CLOCS,5,5
+auprc,1%,MERL > CLOCS > Random init,4,5
+auprc,1%,MERL > Random init > CLOCS,1,5
+auprc,10%,MERL > Random init > CLOCS,5,5
+auprc,100%,MERL > Random init > CLOCS,5,5
