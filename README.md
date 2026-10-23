@@ -50,4 +50,31 @@ Full tables, tests and figures: `analysis/` (`summary.md`, `tests.csv`, `ranking
 (metrics) and `<model>_dataset.pkl` (counts). Models: `clocs`, `merl`, `random_init`; fractions `0.01`, `0.1`, `1.0`.
 
 ## Authors
-Djenna Hammache, Wafa Abed. Stockholm University.
+## Contributions
+- **Djenna Hammache**: ran MERL and CLOCS (seeds 42-46) on PTB-XL (data download and preprocessing),
+  organised the repository and its results layout, ran the analysis and wrote this README.
+- **Wafa Abed**: downloaded the pretrained weights, ran the official Random baseline (seeds 42-46) and
+  wrote `run_random_seeds.sh`.
+- **Both**: chose the research question (from our individual literature reviews), the models, the seeds
+  and the metrics, and interpreted the results.
+
+## Credits and licences
+This repository is a fork of [ecg-fix](https://github.com/zackeberger/ecg-fix); all model code, benchmark and
+pretrained weights are theirs. `ecg-fix` has no licence file at the root, so its code is used here only for
+this course project. Third-party code in `external_src/` keeps its own licence: HeartLang (MIT), D-BETA
+(CC BY-NC 4.0), CLOCS (CC BY-NC-SA 4.0), PTB-XL benchmarking code (GPL-3.0). Our additions are `analyze.py`,
+`run_*_seeds.sh`, `analysis/` and `results/`.
+
+Please cite the original work:
+
+    @misc{berger2026ECGfix,
+      title={Position: Evaluation of ECG Representations Must Be Fixed},
+      author={Zachary Berger and Daniel Prakah-Asante and John Guttag and Collin M. Stultz},
+      year={2026}, eprint={2602.17531}, archivePrefix={arXiv}, primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2602.17531}
+    }
+
+Data: PTB-XL 1.0.3, Wagner et al., *PTB-XL, a large publicly available electrocardiography dataset*,
+Scientific Data, 2020. Models: MERL (Liu et al., ICML 2024) and CLOCS (Kiyasseh et al., ICML 2021).
+
+Stockholm University.
